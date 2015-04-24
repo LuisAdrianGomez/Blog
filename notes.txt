@@ -1,0 +1,3 @@
+Crear proyecto en mysql
+
+	rails new nombre_del_proyecto -d mysql
