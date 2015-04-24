@@ -1,3 +1,7 @@
 Crear proyecto en mysql
 
 	rails new nombre_del_proyecto -d mysql
+
+Generar un controlador
+	
+	rails generate controller name_controller index
