@@ -4,4 +4,26 @@ Crear proyecto en mysql
 
 Generar un controlador
 	
-	rails generate controller name_controller index
+	rails generate controller file_name index
+
+Generar un model
+	
+	rails generate model file_name
+
+	^ en singular
+
+Ejecutar rails
+	
+	rails server
+
+Consola de rails
+
+	rails console
+
+Hacer una migración
+
+	rake db:migrate
+
+Un paso atrás de la migración
+
+	rake db:rollback
