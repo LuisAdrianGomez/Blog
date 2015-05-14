@@ -26,9 +26,14 @@ class TechnologiesController < ApplicationController
   	end
   end
   def destroy
-	@technology = Technology.find(params[:id])
-	@technology.destroy
-	redirect_to technologies_path
+  	@technology = Technology.find(params[:id])
+  	@technology.destroy
+  	redirect_to technologies_path
   end
+  #PUT technologies/:id
+  def update
+    
+  end
+
 
 end
