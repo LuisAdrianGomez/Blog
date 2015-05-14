@@ -13,11 +13,11 @@
 
             </div>
             <div class="col-xs-4 text-right">
-              <a href="technologies/new" class="btn btn-primary"><i class="fa fa-plus-square"></i> sddsd</a>
+              <a href="technologies/new" class="btn btn-primary"><i class="fa fa-plus-square"></i> Add Technology</a>
             </div>
           </div>
           <ol class="breadcrumb">
-            <li class="active">sdsds</li>
+            <li class="active">Technologies</li>
           </ol>
         </section>
 
@@ -27,8 +27,6 @@
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header">
-                  
-                  sdsdsdsd
                   <!--<h3 class="box-title">Data Table With Full Features</h3>-->
                 </div><!-- /.box-header -->
                 <div class="box-body">
@@ -45,7 +43,7 @@
                       <tr>
                       	<td><%= technology.name %></td>
                       	<td><%= technology.link %></td>
-                        <td><%= link_to "Eliminar", technology, method: :delete %></td>
+                        <td><%= link_to "Edit", edit_technology_path(technology.id) %> - <%= link_to "Eliminar", technology, method: :delete %></td>
                       </tr>
                   	  <%end%>
                     </tbody>
