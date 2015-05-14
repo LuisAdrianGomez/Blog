@@ -43,7 +43,14 @@
                       <tr>
                       	<td><%= technology.name %></td>
                       	<td><%= technology.link %></td>
-                        <td><%= link_to "Edit", edit_technology_path(technology.id) %> - <%= link_to "Eliminar", technology, method: :delete %></td>
+                        <td>
+                          <%= link_to edit_technology_path(technology.id) do %> 
+                            <i class="fa fa-edit"></i>
+                          <% end %> &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;
+                          <%= link_to technology, :id => 'delete_record', method: :delete do %> 
+                            <i class="fa fa-trash"></i>
+                          <% end %>
+                        </td>
                       </tr>
                   	  <%end%>
                     </tbody>
