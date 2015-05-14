@@ -26,7 +26,9 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header"></li>
-            <li><a href="technologies"><i class="fa fa-github"></i> Technologies</a></li>
+            <li><%= link_to technologies_path(@technology) do %>
+              <i class="fa fa-github"></i> Technologies
+            <% end %></li>
             
               
           </ul>
